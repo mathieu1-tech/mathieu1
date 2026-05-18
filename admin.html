@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mathieu Konstruct Solutions Admin</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="stylesheet" href="assets/css/admin.css" />
+</head>
+<body>
+  <section class="admin-login-shell" id="loginView">
+    <form class="login-card" id="loginForm">
+      <img class="login-logo" src="assets/images/logo.png" alt="Mathieu Konstruct Solutions logo" />
+      <p class="eyebrow">Local Admin</p>
+      <h1>Content Manager</h1>
+      <p class="hint">Edit website text and catalog data locally in your browser. Changes are saved with localStorage.</p>
+      <label>Username
+        <input id="loginUsername" type="text" autocomplete="username" required />
+      </label>
+      <label>Password
+        <input id="loginPassword" type="password" autocomplete="current-password" required />
+      </label>
+      <button class="btn primary" type="submit">Login</button>
+      <p class="error-message" id="loginError" aria-live="polite"></p>
+      <p class="hint">Default demo login: admin / mks2026</p>
+      <p><a class="btn ghost" href="index.html">Back to Website</a></p>
+    </form>
+  </section>
+
+  <section class="admin-app hidden" id="adminApp">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <img src="assets/images/logo.png" alt="Mathieu Konstruct Solutions logo" />
+        <div><strong>Mathieu Konstruct</strong><small>Website Admin</small></div>
+      </div>
+      <nav class="sidebar-nav" id="sidebarNav" aria-label="Admin sections">
+        <button type="button" data-section="dashboard">Dashboard</button>
+        <button type="button" data-section="brand">Brand</button>
+        <button type="button" data-section="hero">Hero</button>
+        <button type="button" data-section="about">About</button>
+        <button type="button" data-section="vision">Vision & Mission</button>
+        <button type="button" data-section="services">Services</button>
+        <button type="button" data-section="products">Products</button>
+        <button type="button" data-section="specifications">Specifications</button>
+        <button type="button" data-section="materials">Materials</button>
+        <button type="button" data-section="gallery">Gallery</button>
+        <button type="button" data-section="contact">Contact</button>
+        <button type="button" data-section="seo">SEO</button>
+        <button type="button" data-section="theme">Theme</button>
+        <button type="button" data-section="backup">Backup</button>
+      </nav>
+    </aside>
+    <main class="admin-main">
+      <div class="topbar">
+        <h1 id="adminPageTitle">Dashboard</h1>
+        <div class="topbar-actions">
+          <button class="btn ghost" id="previewBtn" type="button">Preview Website</button>
+          <button class="btn primary" id="saveAllBtn" type="button">Save Changes</button>
+          <button class="btn danger" id="logoutBtn" type="button">Logout</button>
+        </div>
+      </div>
+      <section class="panel-section" id="panel-dashboard"></section>
+      <section class="panel-section" id="panel-brand"></section>
+      <section class="panel-section" id="panel-hero"></section>
+      <section class="panel-section" id="panel-about"></section>
+      <section class="panel-section" id="panel-vision"></section>
+      <section class="panel-section" id="panel-services"></section>
+      <section class="panel-section" id="panel-products"></section>
+      <section class="panel-section" id="panel-specifications"></section>
+      <section class="panel-section" id="panel-materials"></section>
+      <section class="panel-section" id="panel-gallery"></section>
+      <section class="panel-section" id="panel-contact"></section>
+      <section class="panel-section" id="panel-seo"></section>
+      <section class="panel-section" id="panel-theme"></section>
+      <section class="panel-section" id="panel-backup"></section>
+    </main>
+  </section>
+
+  <script src="assets/js/site-data.js"></script>
+  <script src="assets/js/admin.js"></script>
+</body>
+</html>
